@@ -1,0 +1,118 @@
+body {
+  /*text-align: center;*/
+  background-color: #36b55c;
+  color: white;
+  font-family: 'Playfair Display', serif;
+}
+#image {
+  position: relative;
+  border-radius: 10px;
+  margin-right: 58px;
+}
+#quote-box {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  line-height: .5;
+}
+.quote {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.1;
+  text-shadow: 2px 2px #696969;
+  position: relative;
+  text-shadow: 2px 2px #696969;
+  } 
+.quote:before, .quote:after {
+  font-size: 6rem;
+  line-height: 2.5rem;
+  position: absolute;
+  text-shadow: 2px 2px #696969;
+}
+.quote:before {
+  content: "“";
+  top: .25em;
+  left: -.45em;
+  text-shadow: 2px 2px #696969;
+}
+.quote:after {
+  content: "”";
+  top: .25em;
+  margin-left: 0em;
+  position: relative;
+  text-shadow: 2px 2px #696969;
+}
+.source {
+  font-size: 1.25rem;;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  text-align: right;
+  margin-right: 0em;
+  text-shadow: 2px 2px #696969;
+}
+.source:before {
+  content: "—";
+  text-shadow: 2px 2px #696969;
+}
+.citation {
+  font-size: 1.25rem;;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  text-align: right;
+  margin-right: 0em;
+  font-style: italic;
+  text-shadow: 2px 2px #696969;
+}
+.citation:before {
+  content: ", ";
+  font-style: normal;
+  text-shadow: 2px 2px #696969;
+}
+.year:before {
+  content: ", ";
+  font-style: normal;
+  text-shadow: 2px 2px #696969;
+}
+.year {
+  font-size: 1.25rem;;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  text-align: right;
+  margin-right: 0em;
+  text-shadow: 2px 2px #696969;
+}
+
+#loadQuote {
+  position: fixed;
+  width: 12em;
+  display: inline-block;
+  left: 50%;
+  margin-left: -6em;
+  bottom: 150px;
+  border-radius: 4px;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #A9A9A9;
+  padding: 15px 0;
+  transition: .5s ;
+}
+#loadQuote:hover {
+  background-color: rgba(255,255,255,.25);
+}
+#loadQuote:focus {
+  outline: none;
+}
+
+@media (max-width: 420px) {
+  .quote {
+    font-size: 2.5rem;
+  }
+  .quote:before, .quote:after {
+    font-size: 3rem;
+  }
+  .source {
+    font-size: 1rem;
+  }
+}

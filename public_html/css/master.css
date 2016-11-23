@@ -1,0 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+body {
+  background-color: tomato;
+  color: white;
+  font-family: Raleway, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+li {
+  float: left;
+  margin: 0;
+  padding: 40px;
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
